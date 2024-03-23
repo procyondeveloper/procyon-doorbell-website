@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR-doorbell</title>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.1/dist/jsQR.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #container {
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Escanear Código QR</h1>
+    <video id="video" playsinline></video>
+    <div id="result"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
